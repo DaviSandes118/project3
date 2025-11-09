@@ -111,6 +111,7 @@
         box-shadow: 0 6px 20px rgba(2, 8, 23, 0.05);
         margin-bottom: 1rem;
       }
+
       .grid {
         display: grid;
         gap: 1rem;
@@ -181,7 +182,7 @@
         margin-bottom: 0.45rem;
       }
 
-      /* Added: visually hidden class for the hero section heading */
+      /* Added: visually hidden class for validator compliance */
       .visually-hidden {
         position: absolute;
         width: 1px;
@@ -207,11 +208,20 @@
     </header>
 
     <section class="hero">
-      <!-- Added hidden heading to satisfy validator -->
       <h2 class="visually-hidden">Intro Section</h2>
 
       <div class="wrap">
-        <div class="card grid grid-2 clearfix">
+        <!-- Float image to the right -->
+        <div class="card clearfix">
+          <figure class="float-right">
+            <img
+              src="ponte.jpg"
+              alt="Golden Gate Bridge tower and cables with San Francisco skyline behind."
+              width="1600"
+              height="980" />
+            <figcaption>Golden Gate Bridge &mdash; photo by Stephen Leonardi (Pexels).</figcaption>
+          </figure>
+
           <article id="intro">
             <h2>Why this place is my favorite</h2>
             <p>
@@ -269,7 +279,7 @@
         </div>
       </article>
 
-      <!-- Alcatraz Island (main) -->
+      <!-- Alcatraz Island -->
       <article class="card">
         <h3>Alcatraz Island</h3>
         <div class="grid grid-2">
@@ -279,7 +289,7 @@
               alt="Alcatraz Island and its historic prison buildings surrounded by the San Francisco Bay."
               width="1600"
               height="980" />
-            <figcaption>Alcatraz Island &mdash; photo by Cl&eacute;ment Proust (Pexels)</figcaption>
+            <figcaption>Alcatraz Island &mdash; photo by Cl&eacute;ment Proust (Pexels).</figcaption>
           </figure>
           <div>
             <p>
@@ -374,7 +384,7 @@
     <footer class="wrap" id="citations">
       <div class="footer-top">
         <h2>Image Credits &amp; License</h2>
-        <div class="small">&copy; <span id="year"></span> Davi Sandes </div>
+        <div class="small">&copy; <span id="year"></span> Davi Sandes</div>
       </div>
       <p class="small">
         All photos downloaded from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> and used
