@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>San Francisco, California — My Favorite Place</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="My favorite place I’ve visited: San Francisco, California — why it’s special, what to see (Golden Gate Bridge, Alcatraz, Japanese Tea Garden), and helpful links." />
+  <meta name="author" content="[Your Name]" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --ink:#0f172a;
+      --accent:#0ea5e9;
+      --paper:#ffffff;
+      --muted:#475569;
+      --maxw:1000px;
+    }
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.5;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent);text-decoration-thickness:2px}
+    a:focus{outline:3px solid #bae6fd;outline-offset:2px}
+    p{margin:0 0 1em 0;text-align:left}
+    h1,h2,h3{line-height:1.25;margin:0 0 .6em 0}
+    h1{font-size:clamp(1.8rem,2.5vw,2.4rem);font-weight:800}
+    h2{font-size:clamp(1.3rem,1.8vw,1.6rem);font-weight:700}
+    h3{font-size:1.1rem}
+    ul,ol{padding-left:1.2rem;margin:0 0 1em 0}
+
+    .wrap{max-width:var(--maxw);margin-inline:auto;padding:1rem 1.25rem}
+    header, main, footer{max-width:var(--maxw);margin:0 auto}
+    header{padding:1.5rem 1.25rem 0}
+    header nav{margin-top:.5rem}
+    header nav a{margin-right:1rem;font-weight:600}
+    .hero{background:linear-gradient(180deg,#e0f2fe,transparent);border-block:1px solid #e2e8f0}
+    .card{
+      background:#fff;
+      border:1px solid #e2e8f0;
+      border-radius:14px;
+      padding:1rem 1rem 0.75rem;
+      box-shadow:0 6px 20px rgba(2,8,23,.05);
+      margin-bottom:1rem;
+    }
+    .grid{display:grid;gap:1rem}
+    @media(min-width:800px){.grid-2{grid-template-columns:1.2fr .8fr}}
+
+    /* float + clear requirement */
+    .float-right{float:right;max-width:360px;margin:0 0 1rem 1rem;border-radius:12px;border:1px solid #e2e8f0}
+    .clearfix::after{content:"";display:block;clear:both}
+
+    figure{margin:0 0 .75rem 0}
+    figcaption{font-size:.92rem;color:var(--muted);margin-top:.4rem}
+
+    aside{border:1px dashed #cbd5e1;border-radius:12px;padding:1rem;background:#f8fafc}
+    .badge{display:inline-block;background:var(--accent);color:white;border-radius:999px;padding:.2rem .6rem;font-size:.78rem;font-weight:700;letter-spacing:.02em}
+
+    footer{padding:1.25rem;border-top:1px solid #e2e8f0;margin-top:2rem}
+    .small{font-size:.92rem;color:var(--muted)}
+    .footer-top{display:flex;flex-wrap:wrap;gap:.75rem 1rem;align-items:center;justify-content:space-between}
+    .cite-list li{margin-bottom:.45rem}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <h1>San Francisco, California</h1>
+    <nav aria-label="Page sections">
+      <a href="#intro">Intro</a>
+      <a href="#attractions">Attractions</a>
+      <a href="#info">City Facts</a>
+      <a href="#citations">Image Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="card grid grid-2 clearfix">
+        
+        <article id="intro">
+          <h2>Why this place is my favorite</h2>
+          <p>Seeing the <strong>Golden Gate Bridge</strong> in person was unforgettable. San Francisco mixes stunning bay views, steep hills, and diverse neighborhoods full of culture. In one day you can experience historic sites, engineering marvels, and peaceful gardens — each with its own charm.</p>
+          <p>Below are my four favorite attractions. All images are stored locally and include descriptive alt text and proper credits.</p>
+        </article>
+
+        <aside aria-label="Quick Tips">
+          <span class="badge">Quick Tips</span>
+          <ol>
+            <li>Bring layers—fog and wind can roll in fast.</li>
+            <li>Use public transit; parking is limited.</li>
+            <li>Go early for the best views and lighter crowds.</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap" id="attractions">
+    <h2>Top Attractions I Visited</h2>
+
+    <!-- Golden Gate Bridge -->
+    <article class="card">
+      <h3>Golden Gate Bridge</h3>
+      <div class="grid grid-2">
+        <figure>
+          <img src="ponte.jpg" alt="Close-up of the Golden Gate Bridge with the San Francisco skyline in the background." width="1600" height="980" />
+          <figcaption>Walkway view of the Golden Gate Bridge.</figcaption>
+        </figure>
+        <div>
+          <p>The Golden Gate Bridge opened in 1937 and remains one of the most photographed bridges in the world. It connects San Francisco to Marin County and offers breathtaking views of the bay and city skyline.</p>
+          <ul>
+            <li><a href="https://www.goldengate.org/bridge/" target="_blank" rel="noopener">Official Bridge Information</a></li>
+            <li><a href="https://www.sftravel.com" target="_blank" rel="noopener">San Francisco Travel</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Alcatraz Island (main) -->
+    <article class="card">
+      <h3>Alcatraz Island</h3>
+      <div class="grid grid-2">
+        <figure>
+          <img src="alcatraz.jpg" alt="Alcatraz Island and its historic prison buildings surrounded by the San Francisco Bay." width="1600" height="980" />
+          <figcaption>Alcatraz Island — photo by Clément Proust (Pexels).</figcaption>
+        </figure>
+        <div>
+          <p>Once a federal prison, Alcatraz is now a national park. The island’s audio tour shares stories of infamous inmates and daring escape attempts, while offering spectacular views back toward the city.</p>
+          <ul>
+            <li><a href="https://www.nps.gov/alca/index.htm" target="_blank" rel="noopener">National Park Service: Alcatraz</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Alcatraz Island (distant) -->
+    <article class="card">
+      <h3>Alcatraz Island (Distant View)</h3>
+      <div class="grid grid-2">
+        <figure>
+          <img src="alcatraz-ilha.jpg" alt="Distant view of Alcatraz Island with lighthouse and rocky shoreline." width="1600" height="980" />
+          <figcaption>Photo by dumitru B (Pexels).</figcaption>
+        </figure>
+        <div>
+          <p>This distant view highlights how isolated Alcatraz was. The cold waters and strong currents around the island made it nearly impossible for prisoners to escape.</p>
+          <ul>
+            <li><a href="https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/" target="_blank" rel="noopener">Alcatraz City Cruises</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Japanese Tea Garden -->
+    <article class="card">
+      <h3>Japanese Tea Garden — Golden Gate Park</h3>
+      <div class="grid grid-2">
+        <figure>
+          <img src="japanese-tea.jpg" alt="Red pagoda surrounded by green trees in the Japanese Tea Garden at Golden Gate Park." width="1600" height="980" />
+          <figcaption>Photo by Robert So (Pexels).</figcaption>
+        </figure>
+        <div>
+          <p>The Japanese Tea Garden is one of San Francisco’s most peaceful spots, featuring traditional architecture, koi ponds, and beautifully landscaped greenery inside Golden Gate Park.</p>
+          <ul>
+            <li><a href="https://www.japaneseteagardensf.com" target="_blank" rel="noopener">Official Tea Garden Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <section class="wrap card" id="info">
+    <h2>Interesting Facts about San Francisco</h2>
+    <ul>
+      <li><strong>Location:</strong> San Francisco, California, United States.</li>
+      <li><strong>Population:</strong> About 800,000 residents (city) and around 4.7 million in the Bay Area.</li>
+      <li><strong>Geography:</strong> Peninsula bordered by the Pacific Ocean and San Francisco Bay, known for steep hills and microclimates.</li>
+      <li><strong>Weather:</strong> Cool summers, frequent fog, and mild winters.</li>
+      <li><strong>Language:</strong> Primarily English, with diverse multilingual communities.</li>
+    </ul>
+  </section>
+
+  <footer class="wrap" id="citations">
+    <div class="footer-top">
+      <h2>Image Credits &amp; License</h2>
+      <div class="small">&copy; <span id="year"></span> [Your Name]</div>
+    </div>
+    <p class="small">All photos downloaded from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> and used under the <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a>.</p>
+    <ul class="small cite-list">
+      <li><strong>ponte.jpg</strong> — Photo by Stephen Leonardi (<a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>).</li>
+      <li><strong>alcatraz.jpg</strong> — Photo by Clément Proust (<a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>).</li>
+      <li><strong>alcatraz-ilha.jpg</strong> — Photo by dumitru B (<a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>).</li>
+      <li><strong>japanese-tea.jpg</strong> — Photo by Robert So (<a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>).</li>
+    </ul>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
